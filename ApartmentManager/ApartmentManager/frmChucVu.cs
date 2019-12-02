@@ -30,8 +30,8 @@ namespace ApartmentManager
             if(kiemTraTruocKhiLuu("MaChucVu") == true &&
                 kiemTraTruocKhiLuu("TenChucVu") == true)
             {
-                String tenCV = txtTenChucVu.Text;
-                String maCV = txtMaChucVu.Text;
+                String tenCV = dgvChucVu.Rows[dgvChucVu.SelectedRows[0].Index].Cells["TenChucVu"].Value.ToString();
+                String maCV = dgvChucVu.Rows[dgvChucVu.SelectedRows[0].Index].Cells["MaChucVu"].Value.ToString();
                 String sql = String.Format("UPDATE CHUCVU " +
                     "SET TenChucVu=N'{0}' WHERE MaChucVu='{1}'", tenCV, maCV);
                 connectionData.runQuery(sql);
