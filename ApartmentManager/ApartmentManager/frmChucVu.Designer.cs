@@ -32,15 +32,15 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvChucVu = new System.Windows.Forms.DataGridView();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnSaveNewJob = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtTenChucVu = new System.Windows.Forms.TextBox();
+            this.txtMaChucVu = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.ToolStripButton();
             this.btnDel = new System.Windows.Forms.ToolStripButton();
             this.btnExit = new System.Windows.Forms.ToolStripButton();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtMaChucVu = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtTenChucVu = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnSaveNewJob = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChucVu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
@@ -80,6 +80,7 @@
             this.btnExit});
             this.bindingNavigator1.Location = new System.Drawing.Point(3, 18);
             this.bindingNavigator1.MoveFirstItem = null;
+            this.bindingNavigator1.MoveLastItem = null;
             this.bindingNavigator1.MoveNextItem = null;
             this.bindingNavigator1.MovePreviousItem = null;
             this.bindingNavigator1.Name = "bindingNavigator1";
@@ -87,36 +88,6 @@
             this.bindingNavigator1.Size = new System.Drawing.Size(246, 25);
             this.bindingNavigator1.TabIndex = 0;
             this.bindingNavigator1.Text = "bindingNavigator1";
-            // 
-            // btnSave
-            // 
-            this.btnSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnSave.Image = global::ApartmentManager.Properties.Resources.save;
-            this.btnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(23, 22);
-            this.btnSave.Text = "toolStripButton2";
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnDel
-            // 
-            this.btnDel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnDel.Image = global::ApartmentManager.Properties.Resources.delete;
-            this.btnDel.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(23, 22);
-            this.btnDel.Text = "toolStripButton3";
-            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnExit.Image = global::ApartmentManager.Properties.Resources.exit;
-            this.btnExit.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(23, 22);
-            this.btnExit.Text = "toolStripButton4";
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // groupBox2
             // 
@@ -133,12 +104,24 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức vụ";
             // 
-            // txtMaChucVu
+            // btnSaveNewJob
             // 
-            this.txtMaChucVu.Location = new System.Drawing.Point(15, 56);
-            this.txtMaChucVu.Name = "txtMaChucVu";
-            this.txtMaChucVu.Size = new System.Drawing.Size(126, 22);
-            this.txtMaChucVu.TabIndex = 0;
+            this.btnSaveNewJob.Location = new System.Drawing.Point(6, 163);
+            this.btnSaveNewJob.Name = "btnSaveNewJob";
+            this.btnSaveNewJob.Size = new System.Drawing.Size(152, 34);
+            this.btnSaveNewJob.TabIndex = 2;
+            this.btnSaveNewJob.Text = "Thêm dân tộc";
+            this.btnSaveNewJob.UseVisualStyleBackColor = true;
+            this.btnSaveNewJob.Click += new System.EventHandler(this.btnSaveNewJob_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 96);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(71, 15);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Tên dân tộc";
             // 
             // label1
             // 
@@ -156,24 +139,39 @@
             this.txtTenChucVu.Size = new System.Drawing.Size(126, 22);
             this.txtTenChucVu.TabIndex = 0;
             // 
-            // label2
+            // txtMaChucVu
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 96);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Tên chức vụ";
+            this.txtMaChucVu.Location = new System.Drawing.Point(15, 56);
+            this.txtMaChucVu.Name = "txtMaChucVu";
+            this.txtMaChucVu.Size = new System.Drawing.Size(126, 22);
+            this.txtMaChucVu.TabIndex = 0;
             // 
-            // btnSaveNewJob
+            // btnSave
             // 
-            this.btnSaveNewJob.Location = new System.Drawing.Point(6, 163);
-            this.btnSaveNewJob.Name = "btnSaveNewJob";
-            this.btnSaveNewJob.Size = new System.Drawing.Size(152, 34);
-            this.btnSaveNewJob.TabIndex = 2;
-            this.btnSaveNewJob.Text = "Thêm chức vụ";
-            this.btnSaveNewJob.UseVisualStyleBackColor = true;
-            this.btnSaveNewJob.Click += new System.EventHandler(this.btnSaveNewJob_Click);
+            this.btnSave.Image = global::ApartmentManager.Properties.Resources.save;
+            this.btnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(47, 22);
+            this.btnSave.Text = "Lưu";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnDel
+            // 
+            this.btnDel.Image = global::ApartmentManager.Properties.Resources.delete;
+            this.btnDel.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(47, 22);
+            this.btnDel.Text = "Xoá";
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Image = global::ApartmentManager.Properties.Resources.exit;
+            this.btnExit.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(57, 22);
+            this.btnExit.Text = "Thoát";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // frmChucVu
             // 
