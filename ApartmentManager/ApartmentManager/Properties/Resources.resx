@@ -157,16 +157,28 @@
   <data name="DichVu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DichVu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TCHS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TCHS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="nguoidung" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nguoidung.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DichVu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DichVu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NguoiDan11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NguoiDan1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dantoc1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dantoc1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TCHS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TCHS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TraCuuNguoiDan1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TraCuuNguoiDan1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TraCuuNhanVien" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TraCuuNhanVien.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
