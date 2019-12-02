@@ -41,5 +41,13 @@ namespace ApartmentManager.DataAccessObject
                 "N'{4}', '{5}', '{6}')", maNV, tenNV, gioiTinh, ngaySinh, diaChi, dienThoai, maChucVu);
             runQuery(sql);
         }
+
+        public void LuuNguoiDan(String maND, String tenND, int gioiTinh, String ngaySinh,
+            String maDT, String maTG, String maNN)
+        {
+            String sql = String.Format("INSERT INTO NGUOIDAN VALUES('{0}', N'{1}', {2}, '{3}', " +
+               "'{4}', '{5}', '{6}')", maND, tenND, gioiTinh, ngaySinh, maDT, maTG, maNN);
+            runQuery(sql);
+        }
     }
 }
