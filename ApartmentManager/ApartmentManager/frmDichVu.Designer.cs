@@ -31,7 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnLuuDichVu = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtDonGia = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtTenDichVu = new System.Windows.Forms.TextBox();
             this.txtMaDichVu = new System.Windows.Forms.TextBox();
@@ -41,8 +43,6 @@
             this.btnSave = new System.Windows.Forms.ToolStripButton();
             this.btnDel = new System.Windows.Forms.ToolStripButton();
             this.btnExit = new System.Windows.Forms.ToolStripButton();
-            this.txtDonGia = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDichVu)).BeginInit();
@@ -77,6 +77,15 @@
             this.btnLuuDichVu.UseVisualStyleBackColor = true;
             this.btnLuuDichVu.Click += new System.EventHandler(this.btnLuuDichVu_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 162);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(133, 15);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Đơn giá ( VNĐ / tháng )";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -85,6 +94,13 @@
             this.label2.Size = new System.Drawing.Size(71, 15);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên dịch vụ";
+            // 
+            // txtDonGia
+            // 
+            this.txtDonGia.Location = new System.Drawing.Point(15, 180);
+            this.txtDonGia.Name = "txtDonGia";
+            this.txtDonGia.Size = new System.Drawing.Size(126, 22);
+            this.txtDonGia.TabIndex = 0;
             // 
             // label1
             // 
@@ -178,22 +194,6 @@
             this.btnExit.Text = "Thoát";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // txtDonGia
-            // 
-            this.txtDonGia.Location = new System.Drawing.Point(15, 180);
-            this.txtDonGia.Name = "txtDonGia";
-            this.txtDonGia.Size = new System.Drawing.Size(126, 22);
-            this.txtDonGia.TabIndex = 0;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 162);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 15);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Đơn giá ( VNĐ / tháng )";
-            // 
             // frmDichVu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -202,6 +202,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmDichVu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDichVu";
             this.Load += new System.EventHandler(this.frmDichVu_Load);
             this.groupBox2.ResumeLayout(false);

@@ -101,7 +101,10 @@ namespace ApartmentManager
 
         private void refreshData()
         {
-            String sql = "SELECT * FROM NGUOIDAN";
+            String sql = "SELECT ND.MaNguoiDan, TenNguoiDan, GioiTinh, NgaySinh, TenDanToc, TenTonGiao, TenNgheNghiep" +
+                " FROM NGUOIDAN ND INNER JOIN DANTOC DT ON DT.MaDanToc = ND.MaDanToc" +
+                " INNER JOIN TONGIAO TG ON TG.MaTonGiao = ND.MaTonGiao " +
+                " INNER JOIN NGHENGHIEP NN ON NN.MaNgheNghiep = ND.MaNgheNghiep";
             dgvNguoiDan.DataSource = connectData.getData(sql);
         }
 

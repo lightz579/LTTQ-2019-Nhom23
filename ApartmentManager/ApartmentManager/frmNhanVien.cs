@@ -14,6 +14,7 @@ namespace ApartmentManager
 {
     public partial class frmNhanVien : Form
     {
+
         DataAccessObject.ConnectDataBase connectData = new DataAccessObject.ConnectDataBase();
 
         public frmNhanVien()
@@ -116,7 +117,8 @@ namespace ApartmentManager
 
         private void refreshData()
         {
-            String sql = "SELECT * FROM NHANVIEN";
+            String sql = "SELECT NV.MaNhanVien, TenNhanVien, GioiTinh, NgaySinh, DiaChi, DienThoai, TenChucVu" +
+                " FROM NHANVIEN NV INNER JOIN CHUCVU CV ON NV.MaChucVu = CV.MaChucVu";
             dgvNhanVien.DataSource = connectData.getData(sql);
         }
 

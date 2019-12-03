@@ -32,15 +32,15 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvChucVu = new System.Windows.Forms.DataGridView();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.btnSave = new System.Windows.Forms.ToolStripButton();
+            this.btnDel = new System.Windows.Forms.ToolStripButton();
+            this.btnExit = new System.Windows.Forms.ToolStripButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnSaveNewJob = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtTenChucVu = new System.Windows.Forms.TextBox();
             this.txtMaChucVu = new System.Windows.Forms.TextBox();
-            this.btnSave = new System.Windows.Forms.ToolStripButton();
-            this.btnDel = new System.Windows.Forms.ToolStripButton();
-            this.btnExit = new System.Windows.Forms.ToolStripButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChucVu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
@@ -88,6 +88,33 @@
             this.bindingNavigator1.Size = new System.Drawing.Size(246, 25);
             this.bindingNavigator1.TabIndex = 0;
             this.bindingNavigator1.Text = "bindingNavigator1";
+            // 
+            // btnSave
+            // 
+            this.btnSave.Image = global::ApartmentManager.Properties.Resources.save;
+            this.btnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(47, 22);
+            this.btnSave.Text = "Lưu";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnDel
+            // 
+            this.btnDel.Image = global::ApartmentManager.Properties.Resources.delete;
+            this.btnDel.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(47, 22);
+            this.btnDel.Text = "Xoá";
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Image = global::ApartmentManager.Properties.Resources.exit;
+            this.btnExit.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(57, 22);
+            this.btnExit.Text = "Thoát";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // groupBox2
             // 
@@ -146,41 +173,15 @@
             this.txtMaChucVu.Size = new System.Drawing.Size(126, 22);
             this.txtMaChucVu.TabIndex = 0;
             // 
-            // btnSave
-            // 
-            this.btnSave.Image = global::ApartmentManager.Properties.Resources.save;
-            this.btnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(47, 22);
-            this.btnSave.Text = "Lưu";
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnDel
-            // 
-            this.btnDel.Image = global::ApartmentManager.Properties.Resources.delete;
-            this.btnDel.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(47, 22);
-            this.btnDel.Text = "Xoá";
-            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.Image = global::ApartmentManager.Properties.Resources.exit;
-            this.btnExit.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(57, 22);
-            this.btnExit.Text = "Thoát";
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // frmChucVu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(448, 327);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmChucVu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmChucVu";
             this.Load += new System.EventHandler(this.frmChucVu_Load);
             this.groupBox1.ResumeLayout(false);

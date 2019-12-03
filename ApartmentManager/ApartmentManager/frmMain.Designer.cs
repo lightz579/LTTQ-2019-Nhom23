@@ -32,28 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tsmQuanTri = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmLoaiNguoiDung = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmNguoiDung = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmQuanLy = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmNguoiDan = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmNhanVien = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmDichVu = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmDangKyDichVu = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmNgheNghiep = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmDanToc = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmTonGiao = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmChucVu = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmTraCuu = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmTraCuuNguoiDan = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmTraCuuNhanVien = new System.Windows.Forms.ToolStripMenuItem();
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.tsbQuanLyNguoiDan = new System.Windows.Forms.ToolStripButton();
-            this.tsbQuanLyNhanVien = new System.Windows.Forms.ToolStripButton();
-            this.tsbQuanLyDichVu = new System.Windows.Forms.ToolStripButton();
-            this.tsbDangKyDichVu = new System.Windows.Forms.ToolStripButton();
-            this.tsbTraCuuNguoiDan = new System.Windows.Forms.ToolStripButton();
-            this.tsbTraCuuNhanVien = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -67,6 +49,25 @@
             this.btnQuanLyNguoiDan = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.tsbQuanLyNguoiDan = new System.Windows.Forms.ToolStripButton();
+            this.tsbQuanLyNhanVien = new System.Windows.Forms.ToolStripButton();
+            this.tsbQuanLyDichVu = new System.Windows.Forms.ToolStripButton();
+            this.tsbDangKyDichVu = new System.Windows.Forms.ToolStripButton();
+            this.tsbTraCuuNguoiDan = new System.Windows.Forms.ToolStripButton();
+            this.tsbTraCuuNhanVien = new System.Windows.Forms.ToolStripButton();
+            this.tsmLoaiNguoiDung = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmNguoiDung = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmNguoiDan = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmNhanVien = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmDichVu = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmDangKyDichVu = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmNgheNghiep = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmDanToc = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmTonGiao = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmChucVu = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmTraCuuNguoiDan = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmTraCuuNhanVien = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnDangKyThue = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
@@ -97,20 +98,6 @@
             this.tsmQuanTri.Size = new System.Drawing.Size(62, 20);
             this.tsmQuanTri.Text = "Quản trị";
             // 
-            // tsmLoaiNguoiDung
-            // 
-            this.tsmLoaiNguoiDung.Image = global::ApartmentManager.Properties.Resources.nguoidung;
-            this.tsmLoaiNguoiDung.Name = "tsmLoaiNguoiDung";
-            this.tsmLoaiNguoiDung.Size = new System.Drawing.Size(164, 22);
-            this.tsmLoaiNguoiDung.Text = "Loại Người Dùng";
-            // 
-            // tsmNguoiDung
-            // 
-            this.tsmNguoiDung.Image = global::ApartmentManager.Properties.Resources.nguoidung;
-            this.tsmNguoiDung.Name = "tsmNguoiDung";
-            this.tsmNguoiDung.Size = new System.Drawing.Size(164, 22);
-            this.tsmNguoiDung.Text = "Người Dùng";
-            // 
             // tsmQuanLy
             // 
             this.tsmQuanLy.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -126,62 +113,6 @@
             this.tsmQuanLy.Size = new System.Drawing.Size(60, 20);
             this.tsmQuanLy.Text = "Quản lý";
             // 
-            // tsmNguoiDan
-            // 
-            this.tsmNguoiDan.Image = global::ApartmentManager.Properties.Resources.NguoiDan1;
-            this.tsmNguoiDan.Name = "tsmNguoiDan";
-            this.tsmNguoiDan.Size = new System.Drawing.Size(161, 22);
-            this.tsmNguoiDan.Text = "Người Dân";
-            // 
-            // tsmNhanVien
-            // 
-            this.tsmNhanVien.Image = global::ApartmentManager.Properties.Resources.NhanVien1;
-            this.tsmNhanVien.Name = "tsmNhanVien";
-            this.tsmNhanVien.Size = new System.Drawing.Size(161, 22);
-            this.tsmNhanVien.Text = "Nhân Viên";
-            // 
-            // tsmDichVu
-            // 
-            this.tsmDichVu.Image = global::ApartmentManager.Properties.Resources.DichVu;
-            this.tsmDichVu.Name = "tsmDichVu";
-            this.tsmDichVu.Size = new System.Drawing.Size(161, 22);
-            this.tsmDichVu.Text = "Dịch Vụ";
-            // 
-            // tsmDangKyDichVu
-            // 
-            this.tsmDangKyDichVu.Image = global::ApartmentManager.Properties.Resources.DangKyDichVu;
-            this.tsmDangKyDichVu.Name = "tsmDangKyDichVu";
-            this.tsmDangKyDichVu.Size = new System.Drawing.Size(161, 22);
-            this.tsmDangKyDichVu.Text = "Đăng Ký Dịch Vụ";
-            // 
-            // tsmNgheNghiep
-            // 
-            this.tsmNgheNghiep.Image = global::ApartmentManager.Properties.Resources.NgheNghiep2;
-            this.tsmNgheNghiep.Name = "tsmNgheNghiep";
-            this.tsmNgheNghiep.Size = new System.Drawing.Size(161, 22);
-            this.tsmNgheNghiep.Text = "Nghề Nghiệp";
-            // 
-            // tsmDanToc
-            // 
-            this.tsmDanToc.Image = global::ApartmentManager.Properties.Resources.dantoc1;
-            this.tsmDanToc.Name = "tsmDanToc";
-            this.tsmDanToc.Size = new System.Drawing.Size(161, 22);
-            this.tsmDanToc.Text = "Dân Tộc";
-            // 
-            // tsmTonGiao
-            // 
-            this.tsmTonGiao.Image = global::ApartmentManager.Properties.Resources.tongiao;
-            this.tsmTonGiao.Name = "tsmTonGiao";
-            this.tsmTonGiao.Size = new System.Drawing.Size(161, 22);
-            this.tsmTonGiao.Text = "Tôn Giáo";
-            // 
-            // tsmChucVu
-            // 
-            this.tsmChucVu.Image = global::ApartmentManager.Properties.Resources.nghenghiep1;
-            this.tsmChucVu.Name = "tsmChucVu";
-            this.tsmChucVu.Size = new System.Drawing.Size(161, 22);
-            this.tsmChucVu.Text = "Chức vụ";
-            // 
             // tsmTraCuu
             // 
             this.tsmTraCuu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -190,20 +121,6 @@
             this.tsmTraCuu.Name = "tsmTraCuu";
             this.tsmTraCuu.Size = new System.Drawing.Size(59, 20);
             this.tsmTraCuu.Text = "Tra Cứu";
-            // 
-            // tsmTraCuuNguoiDan
-            // 
-            this.tsmTraCuuNguoiDan.Image = global::ApartmentManager.Properties.Resources.TCGV;
-            this.tsmTraCuuNguoiDan.Name = "tsmTraCuuNguoiDan";
-            this.tsmTraCuuNguoiDan.Size = new System.Drawing.Size(174, 22);
-            this.tsmTraCuuNguoiDan.Text = "Tra Cứu Người Dân";
-            // 
-            // tsmTraCuuNhanVien
-            // 
-            this.tsmTraCuuNhanVien.Image = global::ApartmentManager.Properties.Resources.TCHS;
-            this.tsmTraCuuNhanVien.Name = "tsmTraCuuNhanVien";
-            this.tsmTraCuuNhanVien.Size = new System.Drawing.Size(174, 22);
-            this.tsmTraCuuNhanVien.Text = "Tra Cứu Nhân Viên";
             // 
             // directorySearcher1
             // 
@@ -233,68 +150,6 @@
             this.bindingNavigator1.Size = new System.Drawing.Size(800, 55);
             this.bindingNavigator1.TabIndex = 1;
             this.bindingNavigator1.Text = "bindingNavigator1";
-            // 
-            // tsbQuanLyNguoiDan
-            // 
-            this.tsbQuanLyNguoiDan.AutoSize = false;
-            this.tsbQuanLyNguoiDan.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbQuanLyNguoiDan.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tsbQuanLyNguoiDan.Image = ((System.Drawing.Image)(resources.GetObject("tsbQuanLyNguoiDan.Image")));
-            this.tsbQuanLyNguoiDan.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsbQuanLyNguoiDan.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbQuanLyNguoiDan.Name = "tsbQuanLyNguoiDan";
-            this.tsbQuanLyNguoiDan.Size = new System.Drawing.Size(52, 52);
-            this.tsbQuanLyNguoiDan.Text = "toolStripButton1";
-            // 
-            // tsbQuanLyNhanVien
-            // 
-            this.tsbQuanLyNhanVien.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbQuanLyNhanVien.Image = global::ApartmentManager.Properties.Resources.NhanVien1;
-            this.tsbQuanLyNhanVien.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsbQuanLyNhanVien.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbQuanLyNhanVien.Name = "tsbQuanLyNhanVien";
-            this.tsbQuanLyNhanVien.Size = new System.Drawing.Size(52, 52);
-            this.tsbQuanLyNhanVien.Text = "toolStripButton2";
-            // 
-            // tsbQuanLyDichVu
-            // 
-            this.tsbQuanLyDichVu.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbQuanLyDichVu.Image = global::ApartmentManager.Properties.Resources.DichVu1;
-            this.tsbQuanLyDichVu.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsbQuanLyDichVu.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbQuanLyDichVu.Name = "tsbQuanLyDichVu";
-            this.tsbQuanLyDichVu.Size = new System.Drawing.Size(52, 52);
-            this.tsbQuanLyDichVu.Text = "toolStripButton3";
-            // 
-            // tsbDangKyDichVu
-            // 
-            this.tsbDangKyDichVu.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbDangKyDichVu.Image = global::ApartmentManager.Properties.Resources.DangKyDichVu;
-            this.tsbDangKyDichVu.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsbDangKyDichVu.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbDangKyDichVu.Name = "tsbDangKyDichVu";
-            this.tsbDangKyDichVu.Size = new System.Drawing.Size(52, 52);
-            this.tsbDangKyDichVu.Text = "toolStripButton4";
-            // 
-            // tsbTraCuuNguoiDan
-            // 
-            this.tsbTraCuuNguoiDan.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbTraCuuNguoiDan.Image = global::ApartmentManager.Properties.Resources.TraCuuNguoiDan1;
-            this.tsbTraCuuNguoiDan.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsbTraCuuNguoiDan.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbTraCuuNguoiDan.Name = "tsbTraCuuNguoiDan";
-            this.tsbTraCuuNguoiDan.Size = new System.Drawing.Size(52, 52);
-            this.tsbTraCuuNguoiDan.Text = "toolStripButton5";
-            // 
-            // tsbTraCuuNhanVien
-            // 
-            this.tsbTraCuuNhanVien.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbTraCuuNhanVien.Image = global::ApartmentManager.Properties.Resources.TraCuuNhanVien;
-            this.tsbTraCuuNhanVien.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsbTraCuuNhanVien.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbTraCuuNhanVien.Name = "tsbTraCuuNhanVien";
-            this.tsbTraCuuNhanVien.Size = new System.Drawing.Size(52, 52);
-            this.tsbTraCuuNhanVien.Text = "toolStripButton6";
             // 
             // panel1
             // 
@@ -328,6 +183,7 @@
             // 
             // btnTraCuuNhanVien
             // 
+            this.btnTraCuuNhanVien.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTraCuuNhanVien.Location = new System.Drawing.Point(19, 84);
             this.btnTraCuuNhanVien.Name = "btnTraCuuNhanVien";
             this.btnTraCuuNhanVien.Size = new System.Drawing.Size(132, 38);
@@ -338,6 +194,7 @@
             // 
             // btnTraCuuNguoiDan
             // 
+            this.btnTraCuuNguoiDan.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTraCuuNguoiDan.Location = new System.Drawing.Point(19, 43);
             this.btnTraCuuNguoiDan.Name = "btnTraCuuNguoiDan";
             this.btnTraCuuNguoiDan.Size = new System.Drawing.Size(132, 38);
@@ -370,6 +227,7 @@
             // 
             // btnDangKyDichVu
             // 
+            this.btnDangKyDichVu.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangKyDichVu.Location = new System.Drawing.Point(19, 164);
             this.btnDangKyDichVu.Name = "btnDangKyDichVu";
             this.btnDangKyDichVu.Size = new System.Drawing.Size(132, 35);
@@ -380,6 +238,7 @@
             // 
             // btnQuanLyDichVu
             // 
+            this.btnQuanLyDichVu.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuanLyDichVu.Location = new System.Drawing.Point(19, 125);
             this.btnQuanLyDichVu.Name = "btnQuanLyDichVu";
             this.btnQuanLyDichVu.Size = new System.Drawing.Size(132, 35);
@@ -390,6 +249,7 @@
             // 
             // btnQuanLyNhanVien
             // 
+            this.btnQuanLyNhanVien.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuanLyNhanVien.Location = new System.Drawing.Point(19, 86);
             this.btnQuanLyNhanVien.Name = "btnQuanLyNhanVien";
             this.btnQuanLyNhanVien.Size = new System.Drawing.Size(132, 35);
@@ -400,6 +260,7 @@
             // 
             // btnQuanLyNguoiDan
             // 
+            this.btnQuanLyNguoiDan.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuanLyNguoiDan.Location = new System.Drawing.Point(19, 46);
             this.btnQuanLyNguoiDan.Name = "btnQuanLyNguoiDan";
             this.btnQuanLyNguoiDan.Size = new System.Drawing.Size(132, 35);
@@ -410,6 +271,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnDangKyThue);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(13, 15);
             this.panel2.Name = "panel2";
@@ -420,11 +282,180 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 10);
+            this.label1.Location = new System.Drawing.Point(28, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 24);
+            this.label1.Size = new System.Drawing.Size(108, 24);
             this.label1.TabIndex = 1;
-            this.label1.Text = "ĐĂNG NHẬP";
+            this.label1.Text = "ĐĂNG KÝ";
+            // 
+            // tsbQuanLyNguoiDan
+            // 
+            this.tsbQuanLyNguoiDan.AutoSize = false;
+            this.tsbQuanLyNguoiDan.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbQuanLyNguoiDan.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsbQuanLyNguoiDan.Image = ((System.Drawing.Image)(resources.GetObject("tsbQuanLyNguoiDan.Image")));
+            this.tsbQuanLyNguoiDan.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbQuanLyNguoiDan.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbQuanLyNguoiDan.Name = "tsbQuanLyNguoiDan";
+            this.tsbQuanLyNguoiDan.Size = new System.Drawing.Size(52, 52);
+            this.tsbQuanLyNguoiDan.Text = "toolStripButton1";
+            this.tsbQuanLyNguoiDan.Click += new System.EventHandler(this.tsbQuanLyNguoiDan_Click);
+            // 
+            // tsbQuanLyNhanVien
+            // 
+            this.tsbQuanLyNhanVien.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbQuanLyNhanVien.Image = global::ApartmentManager.Properties.Resources.NhanVien1;
+            this.tsbQuanLyNhanVien.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbQuanLyNhanVien.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbQuanLyNhanVien.Name = "tsbQuanLyNhanVien";
+            this.tsbQuanLyNhanVien.Size = new System.Drawing.Size(52, 52);
+            this.tsbQuanLyNhanVien.Text = "toolStripButton2";
+            this.tsbQuanLyNhanVien.Click += new System.EventHandler(this.tsbQuanLyNhanVien_Click);
+            // 
+            // tsbQuanLyDichVu
+            // 
+            this.tsbQuanLyDichVu.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbQuanLyDichVu.Image = global::ApartmentManager.Properties.Resources.DichVu1;
+            this.tsbQuanLyDichVu.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbQuanLyDichVu.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbQuanLyDichVu.Name = "tsbQuanLyDichVu";
+            this.tsbQuanLyDichVu.Size = new System.Drawing.Size(52, 52);
+            this.tsbQuanLyDichVu.Text = "toolStripButton3";
+            this.tsbQuanLyDichVu.Click += new System.EventHandler(this.tsbQuanLyDichVu_Click);
+            // 
+            // tsbDangKyDichVu
+            // 
+            this.tsbDangKyDichVu.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbDangKyDichVu.Image = global::ApartmentManager.Properties.Resources.DangKyDichVu;
+            this.tsbDangKyDichVu.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbDangKyDichVu.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbDangKyDichVu.Name = "tsbDangKyDichVu";
+            this.tsbDangKyDichVu.Size = new System.Drawing.Size(52, 52);
+            this.tsbDangKyDichVu.Text = "toolStripButton4";
+            this.tsbDangKyDichVu.Click += new System.EventHandler(this.tsbDangKyDichVu_Click);
+            // 
+            // tsbTraCuuNguoiDan
+            // 
+            this.tsbTraCuuNguoiDan.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbTraCuuNguoiDan.Image = global::ApartmentManager.Properties.Resources.TraCuuNguoiDan1;
+            this.tsbTraCuuNguoiDan.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbTraCuuNguoiDan.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbTraCuuNguoiDan.Name = "tsbTraCuuNguoiDan";
+            this.tsbTraCuuNguoiDan.Size = new System.Drawing.Size(52, 52);
+            this.tsbTraCuuNguoiDan.Text = "toolStripButton5";
+            // 
+            // tsbTraCuuNhanVien
+            // 
+            this.tsbTraCuuNhanVien.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbTraCuuNhanVien.Image = global::ApartmentManager.Properties.Resources.TraCuuNhanVien;
+            this.tsbTraCuuNhanVien.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsbTraCuuNhanVien.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbTraCuuNhanVien.Name = "tsbTraCuuNhanVien";
+            this.tsbTraCuuNhanVien.Size = new System.Drawing.Size(52, 52);
+            this.tsbTraCuuNhanVien.Text = "toolStripButton6";
+            // 
+            // tsmLoaiNguoiDung
+            // 
+            this.tsmLoaiNguoiDung.Image = global::ApartmentManager.Properties.Resources.nguoidung;
+            this.tsmLoaiNguoiDung.Name = "tsmLoaiNguoiDung";
+            this.tsmLoaiNguoiDung.Size = new System.Drawing.Size(164, 22);
+            this.tsmLoaiNguoiDung.Text = "Loại Người Dùng";
+            // 
+            // tsmNguoiDung
+            // 
+            this.tsmNguoiDung.Image = global::ApartmentManager.Properties.Resources.nguoidung;
+            this.tsmNguoiDung.Name = "tsmNguoiDung";
+            this.tsmNguoiDung.Size = new System.Drawing.Size(164, 22);
+            this.tsmNguoiDung.Text = "Người Dùng";
+            // 
+            // tsmNguoiDan
+            // 
+            this.tsmNguoiDan.Image = global::ApartmentManager.Properties.Resources.NguoiDan1;
+            this.tsmNguoiDan.Name = "tsmNguoiDan";
+            this.tsmNguoiDan.Size = new System.Drawing.Size(161, 22);
+            this.tsmNguoiDan.Text = "Người Dân";
+            this.tsmNguoiDan.Click += new System.EventHandler(this.tsmNguoiDan_Click);
+            // 
+            // tsmNhanVien
+            // 
+            this.tsmNhanVien.Image = global::ApartmentManager.Properties.Resources.NhanVien1;
+            this.tsmNhanVien.Name = "tsmNhanVien";
+            this.tsmNhanVien.Size = new System.Drawing.Size(161, 22);
+            this.tsmNhanVien.Text = "Nhân Viên";
+            this.tsmNhanVien.Click += new System.EventHandler(this.tsmNhanVien_Click);
+            // 
+            // tsmDichVu
+            // 
+            this.tsmDichVu.Image = global::ApartmentManager.Properties.Resources.DichVu;
+            this.tsmDichVu.Name = "tsmDichVu";
+            this.tsmDichVu.Size = new System.Drawing.Size(161, 22);
+            this.tsmDichVu.Text = "Dịch Vụ";
+            this.tsmDichVu.Click += new System.EventHandler(this.tsmDichVu_Click);
+            // 
+            // tsmDangKyDichVu
+            // 
+            this.tsmDangKyDichVu.Image = global::ApartmentManager.Properties.Resources.DangKyDichVu;
+            this.tsmDangKyDichVu.Name = "tsmDangKyDichVu";
+            this.tsmDangKyDichVu.Size = new System.Drawing.Size(161, 22);
+            this.tsmDangKyDichVu.Text = "Đăng Ký Dịch Vụ";
+            this.tsmDangKyDichVu.Click += new System.EventHandler(this.tsmDangKyDichVu_Click);
+            // 
+            // tsmNgheNghiep
+            // 
+            this.tsmNgheNghiep.Image = global::ApartmentManager.Properties.Resources.NgheNghiep2;
+            this.tsmNgheNghiep.Name = "tsmNgheNghiep";
+            this.tsmNgheNghiep.Size = new System.Drawing.Size(161, 22);
+            this.tsmNgheNghiep.Text = "Nghề Nghiệp";
+            this.tsmNgheNghiep.Click += new System.EventHandler(this.tsmNgheNghiep_Click);
+            // 
+            // tsmDanToc
+            // 
+            this.tsmDanToc.Image = global::ApartmentManager.Properties.Resources.dantoc1;
+            this.tsmDanToc.Name = "tsmDanToc";
+            this.tsmDanToc.Size = new System.Drawing.Size(161, 22);
+            this.tsmDanToc.Text = "Dân Tộc";
+            this.tsmDanToc.Click += new System.EventHandler(this.tsmDanToc_Click);
+            // 
+            // tsmTonGiao
+            // 
+            this.tsmTonGiao.Image = global::ApartmentManager.Properties.Resources.tongiao;
+            this.tsmTonGiao.Name = "tsmTonGiao";
+            this.tsmTonGiao.Size = new System.Drawing.Size(161, 22);
+            this.tsmTonGiao.Text = "Tôn Giáo";
+            this.tsmTonGiao.Click += new System.EventHandler(this.tsmTonGiao_Click);
+            // 
+            // tsmChucVu
+            // 
+            this.tsmChucVu.Image = global::ApartmentManager.Properties.Resources.nghenghiep1;
+            this.tsmChucVu.Name = "tsmChucVu";
+            this.tsmChucVu.Size = new System.Drawing.Size(161, 22);
+            this.tsmChucVu.Text = "Chức vụ";
+            this.tsmChucVu.Click += new System.EventHandler(this.tsmChucVu_Click);
+            // 
+            // tsmTraCuuNguoiDan
+            // 
+            this.tsmTraCuuNguoiDan.Image = global::ApartmentManager.Properties.Resources.TCGV;
+            this.tsmTraCuuNguoiDan.Name = "tsmTraCuuNguoiDan";
+            this.tsmTraCuuNguoiDan.Size = new System.Drawing.Size(174, 22);
+            this.tsmTraCuuNguoiDan.Text = "Tra Cứu Người Dân";
+            // 
+            // tsmTraCuuNhanVien
+            // 
+            this.tsmTraCuuNhanVien.Image = global::ApartmentManager.Properties.Resources.TCHS;
+            this.tsmTraCuuNhanVien.Name = "tsmTraCuuNhanVien";
+            this.tsmTraCuuNhanVien.Size = new System.Drawing.Size(174, 22);
+            this.tsmTraCuuNhanVien.Text = "Tra Cứu Nhân Viên";
+            // 
+            // btnDangKyThue
+            // 
+            this.btnDangKyThue.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangKyThue.Location = new System.Drawing.Point(19, 38);
+            this.btnDangKyThue.Name = "btnDangKyThue";
+            this.btnDangKyThue.Size = new System.Drawing.Size(132, 36);
+            this.btnDangKyThue.TabIndex = 2;
+            this.btnDangKyThue.Text = "Đăng ký thuê căn hộ";
+            this.btnDangKyThue.UseVisualStyleBackColor = true;
+            this.btnDangKyThue.Click += new System.EventHandler(this.btnDangKyThue_Click);
             // 
             // frmMain
             // 
@@ -436,6 +467,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QUẢN LÝ CHUNG CU";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -493,5 +525,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnDangKyThue;
     }
 }

@@ -182,6 +182,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmTonGiao";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmTonGiao";
             this.Load += new System.EventHandler(this.frmTonGiao_Load);
             this.groupBox2.ResumeLayout(false);

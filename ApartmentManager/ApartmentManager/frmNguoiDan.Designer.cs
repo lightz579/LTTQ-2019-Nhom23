@@ -42,7 +42,6 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnLuu = new System.Windows.Forms.ToolStripButton();
             this.btnXoa = new System.Windows.Forms.ToolStripButton();
             this.btnRefresh = new System.Windows.Forms.ToolStripButton();
             this.btnThoat = new System.Windows.Forms.ToolStripButton();
@@ -70,6 +69,7 @@
             this.cbTonGiao = new System.Windows.Forms.ComboBox();
             this.cbDanToc = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnLuu = new System.Windows.Forms.ToolStripButton();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNguoiDan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
@@ -88,7 +88,7 @@
             this.groupBox2.Size = new System.Drawing.Size(570, 463);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Danh sách nhân viên";
+            this.groupBox2.Text = "Danh sách ";
             // 
             // dgvNguoiDan
             // 
@@ -196,15 +196,6 @@
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.Image = global::ApartmentManager.Properties.Resources.save;
-            this.btnLuu.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(47, 22);
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnXoa
             // 
@@ -495,6 +486,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nhập thông tin";
             // 
+            // btnLuu
+            // 
+            this.btnLuu.Image = global::ApartmentManager.Properties.Resources.save;
+            this.btnLuu.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(47, 22);
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
             // frmNguoiDan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -503,6 +503,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmNguoiDan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmNguoiDan";
             this.Load += new System.EventHandler(this.frmNguoiDan_Load);
             this.groupBox2.ResumeLayout(false);
@@ -534,7 +535,6 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton btnLuu;
         private System.Windows.Forms.ToolStripButton btnXoa;
         private System.Windows.Forms.ToolStripButton btnRefresh;
         private System.Windows.Forms.ToolStripButton btnThoat;
@@ -562,5 +562,6 @@
         private System.Windows.Forms.Button btnThemTonGiao;
         private System.Windows.Forms.ComboBox cbTonGiao;
         private System.Windows.Forms.ComboBox cbDanToc;
+        private System.Windows.Forms.ToolStripButton btnLuu;
     }
 }
